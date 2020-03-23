@@ -54,6 +54,6 @@ def fractal_dimension(Z, threshold=0.9):
     coeffs = np.polyfit(np.log(sizes), np.log(counts), 1)
     return -coeffs[0]
 
-I = imageio.imread("sierpinski.png", as_gray="True")    # Import the image in greyscale
+I = imageio.imread("sierpinski.png", as_gray="True")/255.0    # Import the image in greyscale
 print("Minkowski–Bouligand dimension (computed): ", fractal_dimension(I))
 print("Haussdorf dimension (theoretical):        ", (np.log(3)/np.log(2)))
