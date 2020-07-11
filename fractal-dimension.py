@@ -17,7 +17,6 @@ import numpy as np
 def fractal_dimension(Z, threshold=0.8):
 
     # Only for 2d image
-    print("Zshape is ", Z.shape)
     assert(len(Z.shape) == 2)
 
     # From https://github.com/rougier/numpy-100 (#87)
