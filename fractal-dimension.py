@@ -14,7 +14,7 @@ import imageio
 import numpy as np
 
 
-def fractal_dimension(Z, threshold=0.9):
+def fractal_dimension(Z, threshold=0.8):
 
     # Only for 2d image
     print("Zshape is ", Z.shape)
