@@ -15,6 +15,15 @@ import numpy as np
 
 
 def fractal_dimension(Z, threshold=0.8):
+    """Returns box-counting dimension of a 2D array.
+
+    Args:
+        Z: 2D array to be analysed.
+        threshold: Cutoff for converting values in Z to 1 and 0.
+
+    Returns:
+        The estimated box counting dimension.
+    """
 
     # Only for 2d image
     assert(len(Z.shape) == 2)
